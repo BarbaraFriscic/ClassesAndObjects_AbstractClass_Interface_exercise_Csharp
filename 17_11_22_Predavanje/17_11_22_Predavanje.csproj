@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="GeometrijskiLik.cs" />
     <Compile Include="IObnovljivo.cs" />
+    <Compile Include="Prodavac.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

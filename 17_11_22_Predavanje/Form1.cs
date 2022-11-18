@@ -16,7 +16,7 @@ namespace _17_11_22_Predavanje
         {
             InitializeComponent();
         }
-
+    //ZADATAK GEOMETRIJSKI LIKOVI
         private void btnShow_Click(object sender, EventArgs e)
         {
             Pravokutnik p1 = new Pravokutnik(3,4);
@@ -41,6 +41,7 @@ namespace _17_11_22_Predavanje
             }
         }
 
+    // ZADATAK OPORAVAK - IOBNOVLJIVO INTERFACE
         private void btnShow2_Click(object sender, EventArgs e)
         {
             Pacijent pacijent1 = new Pacijent();
@@ -48,6 +49,18 @@ namespace _17_11_22_Predavanje
             Gospodarstvo gospodarstvo1 = new Gospodarstvo();
 
             lblShowReturn2.Text += $"{pacijent1.Oporavak()} \n {namjestaj1.Oporavak()} \n {gospodarstvo1.Oporavak()} \n"; 
+        }
+
+    // ZADATAK PRODAVAČ
+        private void btnShow3_Click(object sender, EventArgs e)
+        {
+            AgentZaNekretnine agent1 = new AgentZaNekretnine("Ana", "Anić",0.07);
+            TrgovackiPutnik trgovackiPutnik1 = new TrgovackiPutnik("Ivan", "Martinović");
+
+            lblShowReturn3.Text += agent1.UvjeriKupca();
+            lblShowReturn3.Text += trgovackiPutnik1.UvjeriKupca();
+            lblShowReturn3.Text += agent1.Prodaj(380000);
+            lblShowReturn3.Text += trgovackiPutnik1.Prodaj(28);
         }
     }
 }
